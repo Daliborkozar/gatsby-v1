@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Isusivaci vazduha`,
+    description: `Iznajmljivanje aparata za isusivanje vlage, resite se vlage u kratkom roku, jednostavno i bez muke. Rezultat je garantovan`,
+    author: `Dalibor Kozar`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
