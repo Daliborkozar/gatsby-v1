@@ -1,7 +1,9 @@
 import { Link } from "gatsby"
 import React from "react"
 import styled from 'styled-components'
-import { FaBars } from  "react-icons/fa"
+import { FaBars} from  "react-icons/fa"
+import { menuData } from "../data/MenuData"
+import { Button } from '../components/Button'
 
 
 const Header = () => {
@@ -11,6 +13,18 @@ const Header = () => {
       ISUSIVACI VLAGE
     </NavLink>
     <Bars />
+    <NavMenu>
+      {menuData.map((item, index) => {
+        return (
+        <NavLink to={item.link} key={index}>
+          {item.title}
+        </NavLink>
+        )
+      })}
+    </NavMenu>
+    <NavBtn>
+      <Button primary="true" to='/isusivaci'>Iznajmi Isusivac</Button>
+    </NavBtn>
   </Nav>
   )
 }
@@ -48,4 +62,19 @@ const Bars = styled(FaBars)`
     transform: translate(-30%, 60%);
     cursor: pointer;
   }
+`
+
+const NavMenu = styled.div`
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+
+  @media screen and (max-width: 768px){
+    display: none;
+  }
+`
+const NavBtn = styled.div`
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
 `
