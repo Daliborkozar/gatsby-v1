@@ -5,9 +5,7 @@ import {Button} from '../components/Button'
 const Hero = () => {
     return (
         <HeroContainer>  
-            <HeroBg>
-                <Img src="https://www.rovex-grejanje.com/folder/trotec/TTK/TTK170-00.jpg"/>
-            </HeroBg>
+            
             <HeroContent>
                 <HeroItems>
                     <HeroH1>Brzo i efikasno resenje za vlagu</HeroH1>
@@ -22,9 +20,13 @@ const Hero = () => {
 export default Hero
 
 const HeroContainer = styled.div`
-    background: #0c0c0c;
+    background-image: url("https://www.rovex-grejanje.com/folder/trotec/TTK/TTK170-00.jpg");
     display: flex;
     justify-content: center;
+    height: 500px;
+    background-repeat: no-repeat, repeat;
+    background-position: center top;
+    background-size: cover;
     
     
 `
