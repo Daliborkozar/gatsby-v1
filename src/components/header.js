@@ -32,10 +32,11 @@ const Header = () => {
 export default Header
 
 const Nav = styled.nav`
-  background: red;
+  background: transparent;
   height: 80px;
   display: flex;
   justify-content: space-between;
+  
 `
 const NavLink = styled(Link)`
   text-decoration: none;  
@@ -46,6 +47,7 @@ const NavLink = styled(Link)`
   padding: 0.5rem;
   margin-left: 1.5rem;
   justify-content: space-between;
+  z-index: 1000;
 `
 
 const Bars = styled(FaBars)`
@@ -61,6 +63,7 @@ const Bars = styled(FaBars)`
     right: 0;
     transform: translate(-30%, 60%);
     cursor: pointer;
+    z-index:1000
   }
 `
 
@@ -77,4 +80,9 @@ const NavBtn = styled.div`
   display: flex;
   align-items: center;
   margin-right: 20px;
+  z-index:1000;
+  @media screen and (max-width: 768px){
+    display: none;
+  }
+  
 `
