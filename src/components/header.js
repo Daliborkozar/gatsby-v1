@@ -10,7 +10,7 @@ const Header = () => {
   return (
   <Nav>
     <NavLink to="/">
-      ISUSIVACI VLAGE
+      ISUŠIVACI VLAGE
     </NavLink>
     <Bars />
     <NavMenu>
@@ -23,7 +23,7 @@ const Header = () => {
       })}
     </NavMenu>
     <NavBtn>
-      <Button primary="true" to='/isusivaci'>Iznajmi Isusivac</Button>
+      <Button primary="true" to='/isusivaci'>Iznajmi Isušivač</Button>
     </NavBtn>
   </Nav>
   )

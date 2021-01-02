@@ -11,9 +11,9 @@ const Hero = () => {
             </HeroBg>
             <HeroContent>
                 <HeroItems>
-                    <HeroH1>Brzo i efikasno resenje za vlagu</HeroH1>
-                    <HeroP>Vrhunske masine za isusivanje vlage</HeroP>
-                    <Button>Saznaj vise</Button>
+                    <HeroH1>Brzo i efikasno rešenje za vlagu</HeroH1>
+                    <HeroP>Vrhunske mašine za isušivanje vlage</HeroP>
+                    <Button primary="true" big="true" to="/isusivaci">Saznaj više</Button>
                 </HeroItems>
             </HeroContent>
         </HeroContainer>
@@ -30,6 +30,24 @@ const HeroContainer = styled.div`
     align-items: center;
     position: relative;
     margin-top: -80px;
+
+    :before {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left:0;
+        z-index: 2;
+        background:linear-gradient(
+            180deg,
+            rgba(0,0,0,0.2) 0%,
+            rgba(0,0,0,0.6) 100%
+            ),
+            linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100% );
+        
+
+    }
 `
 
 
@@ -42,7 +60,6 @@ const HeroBg = styled.div`
     left:0;
     height: 100%;
     overflow: hidden;
-
 `
 const VideoBg = styled.video`
     width: 100%;
@@ -69,7 +86,8 @@ const HeroItems = styled.div`
     font-weight: bold;
 `
 const HeroP= styled.p`
-    font-size: clamp(1rem, 2.5vw, 2rem); 
-    margin-bottom: 1.5rem;
-    font-size: clamp(0.5rem, 6vw, 1.5rem);
+    font-size: clamp(1rem, 3vw, 2rem); 
+    margin-bottom: 2rem;
+    font-weight: 300;
+    
 `

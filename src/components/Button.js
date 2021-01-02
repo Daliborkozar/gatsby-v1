@@ -12,7 +12,7 @@ export const Button = styled(Link)`
     text-decoration: none;
     transition: 0.3s;
     border-radius: 50px;
-    letter-spacing: 0.1rem;
+    letter-spacing: 3px;
 
     &:hover {
         background: ${({ primary }) => (primary ? "#077BF1" : "#2752E7")};
