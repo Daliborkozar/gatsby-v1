@@ -69,7 +69,7 @@ const VideoBg = styled.video`
 const HeroContent = styled.div`
     position: absolute;
     z-index: 1200;
-    width: calc( (100vw - 2rem) /2 )
+    width: calc( (100vw - 2rem) /2 );
  `
 const HeroH1= styled.h1`
     font-size: clamp(1.5rem, 6vw, 3rem);
@@ -89,5 +89,4 @@ const HeroP= styled.p`
     font-size: clamp(1rem, 3vw, 2rem); 
     margin-bottom: 2rem;
     font-weight: 300;
-    
 `
