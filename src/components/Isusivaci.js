@@ -32,7 +32,7 @@ const Isusivaci = () => {
     data.allModeliIsusivacaJson.edges.forEach((item, index) => {
       arr.push(
         <ProductCard key={index}>
-          <Img
+          <ProductImg
             src={item.node.img.childImageSharp.fluid.src}
             alt={item.node.alt}
             fluid={item.node.img.childImageSharp.fluid}
@@ -82,12 +82,19 @@ const ProductInfo = styled.div`
     display:flex;
     flex-direction: column;
     margin: 1rem 1rem;
-    align-items: center;   
+    align-items: center;
+`
+const ProductImg=styled(Img)`
+    height: 100%;
 `
 const TextWrap = styled.div`
     margin-bottom:1rem;
 `
-const ProductTitle = styled.div``
+const ProductTitle = styled.div`
+    font-weight:400;
+    font-size: 1rem;
+    
+    `
 const ProductCard = styled.div`
     width: 35vw;
     min-width: 350px;
