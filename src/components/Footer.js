@@ -7,7 +7,7 @@ const Footer = () => {
       <FooterLinksWrapper>
         <FooterDescription>
           <h1>Isusivaci</h1>
-          <p>Nemacki Kvalitet za najbolju mogucu uslugu, 100% garancija</p>
+          <p>Nemacki Kvalitet za najbolju uslugu, 100% garancija</p>
         </FooterDescription>
       </FooterLinksWrapper>
       <FooterLinksWrapper>
@@ -34,15 +34,15 @@ export default Footer
 
 const FooterContainer = styled.div`
   display: flex;
-  justify-content: space-around;
-  background-color: #0f3456;
+  justify-content: space-between;
+  background-color: #023047;
   padding: 3rem 2rem;
   color: white;
   flex-flow: wrap;
 `
 const FooterLinksWrapper = styled.div`
   padding: 0 1rem;
-  flex: 1 1 25rem;
+  flex: 1 0 25rem;
   margin-bottom: 1rem;
 `
 const FooterLinkItems = styled.div`
@@ -50,9 +50,12 @@ const FooterLinkItems = styled.div`
 `
 const FooterLink = styled.div`
   font-size: 1rem;
+  line-height: 1.5rem;
 `
 const FooterDescription = styled.div``
 const FooterLinkTitle = styled.div`
   font-size: 1.3rem;
   margin-bottom: 1rem;
+  font-weight: 400;
+
 `
