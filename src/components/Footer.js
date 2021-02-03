@@ -1,5 +1,5 @@
 import React from "react"
-import styled from 'styled-components'
+import styled from "styled-components"
 
 const Footer = () => {
   return (
@@ -9,29 +9,22 @@ const Footer = () => {
           <h1>Isusivaci</h1>
           <p>Nemacki Kvalitet za najbolju mogucu uslugu, 100% garancija</p>
         </FooterDescription>
+      </FooterLinksWrapper>
+      <FooterLinksWrapper>
         <FooterLinkItems>
           <FooterLinkTitle>Kontaktirajte nas</FooterLinkTitle>
           <FooterLink to="/about">Kontakt</FooterLink>
           <FooterLink to="/masine">Masine</FooterLink>
-          <FooterLink to="/contact"></FooterLink>
+          <FooterLink to="/contact">Blog</FooterLink>
           <FooterLink to="/blog">Kontakt</FooterLink>
         </FooterLinkItems>
       </FooterLinksWrapper>
       <FooterLinksWrapper>
-        <FooterLinkItems>
-          <FooterLinkTitle>Isusivaci</FooterLinkTitle>
-          <FooterLink to="/about">Modeli</FooterLink>
-          <FooterLink to="/masine">Masine</FooterLink>
-          <FooterLink to="/contact">Informacije</FooterLink>
-          <FooterLink to="/blog">Performanse</FooterLink>
-        </FooterLinkItems>
-        <FooterLinkItems>
-          <FooterLinkTitle>Drustvene mreze</FooterLinkTitle>
-          <FooterLink to="/about">Instagram</FooterLink>
-          <FooterLink to="/masine">Facebook</FooterLink>
-          <FooterLink to="/contact">Youtube</FooterLink>
-          <FooterLink to="/blog">Twitter</FooterLink>
-        </FooterLinkItems>
+        <FooterLinkTitle>Drustvene mreze</FooterLinkTitle>
+        <FooterLink to="/about">Instagram</FooterLink>
+        <FooterLink to="/masine">Facebook</FooterLink>
+        <FooterLink to="/contact">Youtube</FooterLink>
+        <FooterLink to="/blog">Twitter</FooterLink>
       </FooterLinksWrapper>
     </FooterContainer>
   )
@@ -39,5 +32,27 @@ const Footer = () => {
 
 export default Footer
 
-
-const FooterContainer = styled.div``
+const FooterContainer = styled.div`
+  display: flex;
+  justify-content: space-around;
+  background-color: #0f3456;
+  padding: 3rem 2rem;
+  color: white;
+  flex-flow: wrap;
+`
+const FooterLinksWrapper = styled.div`
+  padding: 0 1rem;
+  flex: 1 1 25rem;
+  margin-bottom: 1rem;
+`
+const FooterLinkItems = styled.div`
+  
+`
+const FooterLink = styled.div`
+  font-size: 1rem;
+`
+const FooterDescription = styled.div``
+const FooterLinkTitle = styled.div`
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+`
