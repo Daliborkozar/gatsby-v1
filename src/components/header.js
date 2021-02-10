@@ -33,6 +33,7 @@ export default Header
 
 const Nav = styled.nav`
   background: transparent;
+  background-color: blue;
   height: 80px;
   display: flex;
   justify-content: space-between;

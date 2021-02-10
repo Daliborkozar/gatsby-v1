@@ -15,7 +15,6 @@ const IndexPage = () => (
     <Hero />
     <Isusivaci />
     <Testimonials />
-    <Footer />
   </Layout>
 )
 
