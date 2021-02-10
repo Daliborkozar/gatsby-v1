@@ -7,8 +7,9 @@
 
 import React from "react"
 import Header from "./Header"
-import { GlobalStyle } from './styles/GlobalStyle'
+import styled, { GlobalStyle } from './styles/GlobalStyle'
 import Footer from './Footer'
+
 
 
 const Layout = ({ children }) => {
